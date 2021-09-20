@@ -24,8 +24,9 @@ Tudo isso para cada usuário em específico (o username será passado pelo heade
 - id: 'uuid' (v4)
 - title: string
 - done: boolean default = false
+- pro: boolen default = false
 - deadline: date
-  created_at: date
+- created_at: date
 
 ### Regras de negócio
 
@@ -34,6 +35,8 @@ Tudo isso para cada usuário em específico (o username será passado pelo heade
 - [x] Não deve se possivel atualizar uma `todo` com ID invalido.
 - [x] Não deve se possivel marcar uma `todo` como `done` se o ID for invalido.
 - [x] Para todas requisições de todo deve se verificado se o usuario é valido.
+- [x] Usuarios free não podem cadastrar mais que 10 tarefas.
+- [x] Para rotas que trabalham com ID o mesmo deve se validado se está no formato correto.
 
 ### Rodando o projeto
 
